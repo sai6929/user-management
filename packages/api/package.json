@@ -1,0 +1,23 @@
+{
+  "name": "@user-management/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@user-management/shared": "workspace:*",
+    "axios": "^1.20.0"
+  },
+  "peerDependencies": {
+    "@tanstack/react-query": "^5.104.1"
+  },
+  "devDependencies": {
+    "@tanstack/react-query": "^5.104.1"
+  }
+}

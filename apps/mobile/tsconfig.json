@@ -1,0 +1,14 @@
+{
+  // Expo's React Native settings first, then the workspace's strict options on top.
+  "extends": ["expo/tsconfig.base", "../../tsconfig.json"],
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext"],
+    "module": "preserve",
+    "customConditions": ["react-native"],
+    "types": ["expo/types"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["app", "src", "vitest.config.mts", ".expo/types/**/*.ts", "expo-env.d.ts"]
+}

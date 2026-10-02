@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    // Axios' typings reference a few DOM types; no runtime DOM APIs are used here.
+    "lib": ["ES2022", "DOM"],
+    "types": []
+  },
+  "include": ["src", "vitest.config.ts"]
+}

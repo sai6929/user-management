@@ -1,0 +1,35 @@
+{
+  "name": "@user-management/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.13.0",
+    "@tanstack/react-query": "^5.104.1",
+    "@user-management/api": "workspace:*",
+    "@user-management/shared": "workspace:*",
+    "@user-management/store": "workspace:*",
+    "axios": "^1.20.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-redux": "^9.3.0",
+    "react-router": "^7.18.4"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/react": "~19.2.18",
+    "@types/react-dom": "~19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "jsdom": "^29.1.1",
+    "vite": "^8.3.2"
+  }
+}

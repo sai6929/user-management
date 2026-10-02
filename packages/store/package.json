@@ -1,0 +1,17 @@
+{
+  "name": "@user-management/store",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.13.0",
+    "@user-management/shared": "workspace:*"
+  }
+}

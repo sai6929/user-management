@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    // No DOM, no Node, no React Native: shared code must stay platform-independent.
+    "lib": ["ES2022"],
+    "types": []
+  },
+  "include": ["src", "vitest.config.ts"]
+}

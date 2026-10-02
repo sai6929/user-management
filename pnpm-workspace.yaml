@@ -1,0 +1,10 @@
+packages:
+  - apps/*
+  - packages/*
+
+# React Native / Metro resolves most reliably with a flat node_modules layout.
+nodeLinker: hoisted
+engineStrict: true
+# Peers must be declared explicitly so nothing unexpected (e.g. an extra native
+# module that Expo would autolink) is installed silently.
+autoInstallPeers: false
